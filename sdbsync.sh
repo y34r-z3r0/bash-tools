@@ -2,7 +2,7 @@
 
 sd1="/Volumes/SD1"
 sd2="/Volumes/SD2"
-db="oops.kdbx"
+db="secret.kdbx"
 
 function hash {
 	ds1_hash=$(md5 $sd1/$db | awk '{print$4}')
@@ -11,7 +11,7 @@ function hash {
 	echo "SD2 = ${ds2_hash}"
 }
 
-if [ -d $sd1_path ] && [ -d $sd2_path ]; then
+if [ -d $sd1 ] && [ -d $sd2 ]; then
 	echo '' ; echo "Nice! Both cards is available."
 	if [ $ds1_hash = $ds2_hash]; then
 		echo '' ; hash
