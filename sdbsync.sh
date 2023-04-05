@@ -2,7 +2,7 @@
 
 sd1_path="/Volumes/SD1"
 sd2_path="/Volumes/SD2"
-db="oops.kdbx"
+db="secrets.kdbx"
 
 if [ -d $sd1_path ] && [ -d $sd2_path ]; then
 	echo "Both cards is available"
