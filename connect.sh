@@ -24,4 +24,4 @@ elif [ $host = "2" ]; then
 else
     continue
 fi
-don
+done
