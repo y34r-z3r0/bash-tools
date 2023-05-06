@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "List of available hosts:"
-# echo "[1] host.name.one"
-# echo "[2] host.name.two"
+echo "[1] host.name.one"
+echo "[2] host.name.two"
 
 while true; do
 read -p "Connect to host number: " host
