@@ -19,8 +19,8 @@ elif [ $host = "1" ]; then
             continue
         fi
 elif [ $host = "2" ]; then
-    read -p "default user [y/n]: " question
-    if [ $question = "n" ]; then
+    read -p "default user [y/n]: " getUser
+    if [ $getUser = "n" ]; then
         read -p "username: " user
         ssh $user@hostname.two
     break
