@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "List of available hosts:"
-echo "[1] hostname_one"
-echo "[2] hostname_two"
+echo "[1] hostname.one"
+echo "[2] hostname.two"
 
 while true; do
 read -p "Connect to host number: " host
@@ -13,7 +13,7 @@ elif [ $host = "1" ]; then
         if  [ -z $vpn ]; then
             continue
         elif [ $vpn = "y" ]; then
-            ssh hostname_one
+            ssh hostname.one
             break
         else
             continue
@@ -22,10 +22,10 @@ elif [ $host = "2" ]; then
     read -p "default user [y/n]: " question
     if [ $question = "n" ]; then
         read -p "username: " user
-        ssh $user@hostname_two
+        ssh $user@hostname.two
     break
     elif [ $question = "y" ]; then
-        ssh hostname_two
+        ssh hostname.two
 	break
     else
 	continue
